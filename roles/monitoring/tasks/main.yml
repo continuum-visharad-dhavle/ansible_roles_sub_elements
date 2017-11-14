@@ -1,0 +1,9 @@
+---
+
+- name: executing moniroting
+  raw:  echo "{{ item[1] }}"
+  with_subelements:
+    - "{{ monitoring.nodes }}"
+    - command
+  when: inventory_hostname in item[0].host
+#  when: item[0] in groups['int-kafka']

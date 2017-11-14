@@ -1,0 +1,14 @@
+monitoring:
+  nodes:
+    - host:
+        - kafka_1
+        - kafka_3
+      command:
+        - "Hello kafka command 1"
+        - "Hello kafka command 2"
+    - host:
+        - cassandra_1
+        - cassandra_2
+      command:
+        - "Hello cassandra command 1"
+        - "Hello cassandra command 2"

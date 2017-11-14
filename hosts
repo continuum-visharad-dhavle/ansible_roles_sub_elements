@@ -1,0 +1,11 @@
+[int-kafka]
+kafka_1 ansible_host=127.0.0.1
+kafka_2 ansible_host=17.31.21.69
+
+[int-cassandra]
+cassandra_1 ansible_host=127.0.0.1
+cassandra_2 ansible_host=127.0.0.1
+
+[aws-int:children]
+int-kafka
+int-cassandra

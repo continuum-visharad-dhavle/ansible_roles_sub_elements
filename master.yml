@@ -1,0 +1,6 @@
+---
+
+- hosts: "{{ host }}"
+  roles:
+    - { role:  monitoring, when: monitoring is defined }
+
